@@ -1,0 +1,14 @@
+.product-card { 
+    width: 16rem; 
+    margin: 0.5rem;
+    min-height: 26rem;
+    display: inline-flex !important;
+    background-color: #fafafa !important
+}
+
+.color-dot { 
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%; 
+    display: inline-flex 
+}
