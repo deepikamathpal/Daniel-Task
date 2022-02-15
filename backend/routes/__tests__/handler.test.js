@@ -5,7 +5,6 @@ const express = require("express");
 const app = express();
 const axios = require('axios');
 const getProductsTestData = require('../../testData/getProductsTestData');
-const getProductsTestData2 = require('../../testData/getProductsTestData2');
 const getImagesTestData = require('../../testData/getImagesTestData');
 
 jest.mock('axios');
@@ -22,7 +21,6 @@ test("should fetch correct image for a product sku", done => {
                 data: getProductsTestData
             });
         }
-        
         //mock Image API and return image test data
         if (url === process.env.API_URL + "/images") {
             return Promise.resolve({
@@ -41,32 +39,3 @@ test("should fetch correct image for a product sku", done => {
             done();
         })
 });
-
-
-// test("should throw error for a missing sku in Image response data", () => {
-    
-//     //mock Product API and return product test data
-//     axios.get.mockImplementation((url) => {
-//         if (url === process.env.API_URL + "/products") {
-//             return Promise.resolve({
-//                 data: getProductsTestData2
-//             });
-//         }
-        
-//         //mock Image API and return image test data
-//         if (url === process.env.API_URL + "/images") {
-//             return Promise.resolve({
-//                 data: getImagesTestData
-//             });
-//         }
-//     });
-
-//     request(app)
-//         .get("/products")
-//         .end((err, res) => {
-//             //console.log("error : " + err);
-//             //console.log("response : " + res);
-//             expect(res).toThrow(Error);
-//             expect(res).toThrow("ProducSKU is missing in Images response !");
-//         })
-// });

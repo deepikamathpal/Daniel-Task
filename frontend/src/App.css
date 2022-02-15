@@ -1,7 +1,6 @@
 .product-card { 
-    width: 16rem; 
+    width: 20rem; 
     margin: 0.5rem;
-    min-height: 26rem;
     display: inline-flex !important;
     background-color: #fafafa !important
 }

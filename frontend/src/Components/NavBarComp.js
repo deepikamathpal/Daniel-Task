@@ -10,10 +10,10 @@ const NavBarComp = () => {
     <Navbar.Brand as = {Link} to ={"/"}>DW</Navbar.Brand>
     <Nav className="me-auto">
       <Nav.Link as = {Link} to ={"/"}>WATCHES</Nav.Link>
-      <Nav.Link href="#pricing">JEWELRY</Nav.Link>
-      <Nav.Link href="#pricing">WATCH BANDS</Nav.Link>
-      <Nav.Link href="#pricing">COLLECTIONS</Nav.Link>
-      <Nav.Link href="#pricing">SHOP INSTAGRAM</Nav.Link>
+      <Nav.Link href="#">JEWELRY</Nav.Link>
+      <Nav.Link href="#">WATCH BANDS</Nav.Link>
+      <Nav.Link href="#">COLLECTIONS</Nav.Link>
+      <Nav.Link href="#">SHOP INSTAGRAM</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

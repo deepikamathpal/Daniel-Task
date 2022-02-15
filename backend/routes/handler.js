@@ -18,10 +18,6 @@ router.get('/products', async function (req, res) {
     const productDetails = [];
     let productUI = {};
     products.forEach(product => {
-        
-        if(productImages[product.sku] === undefined)
-            throw new Error("Product SKU is missing in Images response !");
-        
         productUI = { ...product };
         productUI.images = productImages[product.sku];
         productDetails.push(productUI);
