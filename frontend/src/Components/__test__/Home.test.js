@@ -18,12 +18,6 @@ describe('Test Product Card', () => {
        });
      it('should render Card correctly', () => {
 
-        const productdetails = {
-            name: "Classic Oxford 40 Rose Gold",
-            color: "Rose Gold",
-            price:"€159"
-          };
-         
           const pCard = screen.queryByTestId("product_card");
           expect(pCard).toMatchSnapshot();
           const pCardText = screen.queryByTestId("card-text");
