@@ -1,24 +1,5 @@
 ## Instructions to start the application
 
-** **How to run React application** **<br/>
-In the project directory "frontend":
-1. Open a New Terminal
-2. Make sure you are in "frontend" folder
-3. Run below commands in bold.  <br/>
-
-### `npm install`
-Install the dependencies to run the project.<br/>
-
-### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-<br/>
-
-### `npm test`
-It will launch the test runner in the interactive watch mode for react application.<br/><br/><br/>
-
-
-
 ** **How to run Node server** **<br/>
 In the project directory "backend" :
 1. Open a New Terminal
@@ -33,7 +14,25 @@ Runs the node server in the background to fetch the data from Products and Image
 Open [http://localhost:4000/products](http://localhost:4000/products) to view the merged JSON response in your browser.
 
 ### `npm test`
-It will launch the test runner in the interactive watch mode.<br/>
+It will launch the test runner in the interactive watch mode.<br/><br/><br/>
+
+
+** **How to run React application** **<br/>
+In the project directory "frontend":
+1. Open a New Terminal
+2. Make sure you are in "frontend" folder
+3. Run below commands in bold.  <br/>
+
+### `npm install`
+Install the dependencies to run the project.<br/>
+
+### `npm start`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser (if it doesn't automatically).
+<br/>
+
+### `npm test`
+It will launch the test runner in the interactive watch mode for react application.<br/><br/>
 
 
 
